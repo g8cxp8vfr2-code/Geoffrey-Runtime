@@ -1,23 +1,22 @@
-# Response Schema
+# Receipt Schema
 
-The response schema defines the standard result returned by Geoffrey Runtime after a request has been processed.
+The receipt schema defines durable evidence recorded after a governed request has been processed.
 
-A response indicates whether the runtime accepted, rejected, or completed a request.
+A receipt indicates whether the runtime rejected, blocked, failed, or completed a governed request. Free Radio uses a distinct post-execution receipt/status profile because the customer device has already executed the action; see [`radio-v1.md`](radio-v1.md).
 
-## Standard Response
+## Standard Receipt
 
 ```json
 {
   "schema_version": "1.0",
   "request_id": "req-001",
-  "response_id": "res-001",
+  "receipt_id": "receipt-001",
   "timestamp": "2026-07-19T21:35:00-05:00",
   "status": "success",
   "target": "radio",
   "action": "play",
   "message": "Radio started successfully.",
-  "executor": "radio_executor",
-  "receipt_id": "receipt-001"
+  "executor": "radio_executor"
 }
 ```
 
@@ -25,22 +24,22 @@ A response indicates whether the runtime accepted, rejected, or completed a requ
 
 | Field | Description |
 |---|---|
-| `schema_version` | Response schema version |
+| `schema_version` | Receipt schema version |
 | `request_id` | Original request identifier |
-| `response_id` | Unique response identifier |
+| `receipt_id` | Unique receipt identifier |
 | `timestamp` | Time the response was generated |
 | `status` | success, failed, or blocked |
 | `target` | Target executor |
 | `action` | Action performed |
 | `message` | Human-readable result |
 
-## Example Failed Response
+## Example Failed Receipt
 
 ```json
 {
   "schema_version": "1.0",
   "request_id": "req-002",
-  "response_id": "res-002",
+  "receipt_id": "receipt-002",
   "timestamp": "2026-07-19T21:36:00-05:00",
   "status": "failed",
   "target": "tesla",
@@ -59,6 +58,6 @@ A response indicates whether the runtime accepted, rejected, or completed a requ
 
 ## Notes
 
-Every response corresponds to exactly one request.
+Every governed receipt corresponds to one request. A locally originated Radio execution receipt instead correlates to the local action by `request_id` and must never be interpreted as a new governed request.
 
-A successful response may also generate a receipt and one or more log entries.
+A governed request may also generate a response and one or more log entries.

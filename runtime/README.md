@@ -2,7 +2,7 @@
 
 > A governed personal automation runtime built with Apple Shortcuts and AI.
 
-Geoffrey Runtime is a modular automation runtime designed to provide deterministic execution, structured request handling, scheduling, logging, and AI-assisted orchestration. Every request entering the runtime follows a versioned schema, making execution predictable, auditable, and easier to maintain as the system evolves.
+Geoffrey Runtime is a modular automation runtime designed to provide deterministic execution, structured request handling, scheduling, logging, and AI-assisted orchestration. Governed requests entering the runtime follow versioned contracts. Explicitly local capabilities can instead execute on the customer device and publish a post-execution receipt or status event.
 
 ---
 
@@ -12,7 +12,7 @@ Most home automation focuses on executing commands.
 
 Geoffrey Runtime focuses on governing them.
 
-Rather than allowing every automation to execute independently, Geoffrey Runtime introduces a runtime layer that standardizes requests, validates data, records execution history, and coordinates automation services through reusable runtime components.
+For governed capabilities, Geoffrey Runtime introduces a runtime layer that standardizes requests, validates data, records execution history, and coordinates automation services through reusable runtime components. Explicitly local capabilities keep their documented local boundary.
 
 The goal is to bring software engineering principles such as versioning, middleware, logging, scheduling, and deterministic execution to Apple Shortcuts.
 
@@ -57,8 +57,12 @@ The goal is to bring software engineering principles such as versioning, middlew
            Runtime Services
                    │
                    ▼
- Apple Home • Tesla • Radio • Scenes
+Apple Home • Tesla • Radio • Scenes
 ```
+
+## Radio V1 boundary
+
+Free Radio does not enter the governed flow above before execution. It executes locally and may report the completed action afterward. Jackson-West-originated or otherwise governed Radio requests continue to use the governed flow. See [`../docs/radio-v1.md`](../docs/radio-v1.md).
 
 ---
 
@@ -91,7 +95,7 @@ GeoffreyRuntime/
 
 # Runtime Principles
 
-Every Geoffrey Runtime request follows the same lifecycle.
+Every governed Geoffrey Runtime request follows the lifecycle below.
 
 1. Receive the request.
 2. Wrap the request.
@@ -102,6 +106,8 @@ Every Geoffrey Runtime request follows the same lifecycle.
 7. Return the result.
 
 These principles make runtime behavior predictable, testable, and easier to troubleshoot.
+
+A local Radio receipt is evidence of a device-reported local action. It is not a second request and does not prove that Jackson-West authorized the local action.
 
 ---
 

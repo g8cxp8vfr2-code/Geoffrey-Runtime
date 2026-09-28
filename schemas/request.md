@@ -1,6 +1,6 @@
 # Request Schema
 
-The request schema defines the standard structure for every command entering Geoffrey Runtime.
+The request schema defines the standard structure for a governed command entering Geoffrey Runtime. A locally completed Free Radio action is reported through the separate [Radio V1 receipt/status contract](radio-v1.md); it is not submitted again as a governed request.
 
 Requests may come from buttons, voice input, schedules, messages, calendar events, or AI interpretation.
 
@@ -12,15 +12,15 @@ Requests may come from buttons, voice input, schedules, messages, calendar event
   "request_id": "unique-request-id",
   "timestamp": "2026-07-19T21:30:00-05:00",
   "source": "governed_button",
-  "user_id": "mr_jackson",
-  "device_id": "geoffrey_phone",
+  "user_id": "<USER_ID>",
+  "device_id": "<DEVICE_ID>",
   "intent": "media_control",
   "target": "radio",
   "action": "play",
   "parameters": {
-    "station": "Jazz Radio",
-    "rooms": [
-      "upstairs"
+    "station": "jacks_jazz_radio",
+    "speakers": [
+      "this_device"
     ]
   },
   "raw_text": null
@@ -40,7 +40,7 @@ Requests may come from buttons, voice input, schedules, messages, calendar event
 | `intent` | High-level request category |
 | `target` | Executor or system receiving the action |
 | `action` | Requested operation |
-| `parameters` | Values needed to complete the action |
+| `parameters` | Values needed to complete the action; target-specific profiles define the allowed keys |
 
 ## Optional Fields
 
@@ -61,24 +61,26 @@ Requests may come from buttons, voice input, schedules, messages, calendar event
 
 ## Example: Radio Request
 
+This is a governed Radio request. Free Radio uses the post-execution receipt/status profile in [`radio-v1.md`](radio-v1.md).
+
 ```json
 {
   "schema_version": "1.0",
   "request_id": "req-001",
   "timestamp": "2026-07-19T21:30:00-05:00",
   "source": "voice",
-  "user_id": "mr_jackson",
-  "device_id": "geoffrey_phone",
+  "user_id": "<USER_ID>",
+  "device_id": "<DEVICE_ID>",
   "intent": "media_control",
   "target": "radio",
   "action": "play",
   "parameters": {
-    "station": "Clark Howard",
-    "rooms": [
-      "upstairs"
+    "station": "clark_howard_podcast",
+    "speakers": [
+      "living_room_speakers"
     ]
   },
-  "raw_text": "Play Clark Howard upstairs"
+  "raw_text": "Play Clark Howard in the living room"
 }
 ```
 
@@ -90,8 +92,8 @@ Requests may come from buttons, voice input, schedules, messages, calendar event
   "request_id": "req-002",
   "timestamp": "2026-07-19T21:31:00-05:00",
   "source": "governed_button",
-  "user_id": "mr_jackson",
-  "device_id": "geoffrey_phone",
+  "user_id": "<USER_ID>",
+  "device_id": "<DEVICE_ID>",
   "intent": "vehicle_control",
   "target": "tesla",
   "action": "preheat_off",
@@ -107,10 +109,12 @@ Requests may come from buttons, voice input, schedules, messages, calendar event
 A request must fail validation when:
 
 - A required field is missing
-- `target.action` is not approved
+- The target/action combination is not approved
 - A required parameter is missing
 - A parameter value is not found in the approved registry
 - The request violates a runtime lock or policy
 - The schema version is unsupported
 
 AI may interpret a request, but AI-generated output must still pass the same validation process before execution.
+
+Private authentication fields are intentionally omitted from these generic examples. Customer-side access configuration does not itself grant server authorization; Jackson-West independently authenticates and authorizes every message sent to its governed interface.

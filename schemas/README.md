@@ -2,14 +2,18 @@
 
 Schemas define the data contracts used by Geoffrey Runtime.
 
-Every request, response, receipt, and log follows a documented structure so components can communicate predictably.
+Each published request, response, receipt, and log profile follows a documented structure so components can communicate predictably.
 
-## Planned Schemas
+## Published schemas
 
-- Request
-- Response
-- Receipt
-- Log Entry
+- [Request](request.md)
+- [Response](response.md)
+- [Receipt](receipt.md)
+- [Log entry](log.md)
+- [Radio V1](radio-v1.md)
+
+## Planned schemas
+
 - Notification
 - Runtime State
 - Registry Entry

@@ -81,6 +81,8 @@ A response reports whether the runtime completed, failed, blocked, rejected, or 
 
 Every response corresponds to exactly one request.
 
+A Free Radio post-execution receipt/status event is not a response to a governed request. Its contract is documented separately in [`radio-v1.md`](radio-v1.md).
+
 The outer response shape remains consistent. Target-specific details are placed inside `payload`.
 
 A successful response may also generate a separate receipt and one or more log entries.

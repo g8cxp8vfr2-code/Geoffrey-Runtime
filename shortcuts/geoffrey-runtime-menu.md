@@ -14,6 +14,8 @@ No explicit input is required.
 4. Runs `Talk to Geoffrey Runtime` when `Talk to Geoffrey` is selected.
 5. Runs `Jackson West Free Radio` when `Radio` is selected.
 
+`Jackson West Free Radio` is local-first in Radio V1. The selected Radio action executes on the customer device; any later Jackson-West message is a receipt/status event where configured, not a new governed request. Jackson-West-originated Radio requests retain their governed path.
+
 ## Output
 
 The selected downstream Shortcut's result, if one is returned.
