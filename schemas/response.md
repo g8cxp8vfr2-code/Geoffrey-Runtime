@@ -81,7 +81,7 @@ A response reports whether the runtime completed, failed, blocked, rejected, or 
 
 Every response corresponds to exactly one request.
 
-A Free Radio post-execution receipt/status event is not a response to a governed request. Its contract is documented separately in [`radio-v1.md`](radio-v1.md).
+A Free Radio post-execution receipt/state report is not a response to a governed request and must never cause another Radio execution. Local Radio runs without Jackson-West governance; access defaults false/off. The governed/blocked examples above describe server-request outcomes, not evidence that Jackson-West controls the customer-editable local Shortcut. Server-originated Radio requires prior local initialization. The unchanged contract is documented in [`radio-v1.md`](radio-v1.md) and the [frozen architecture](../docs/radio-v1.md).
 
 The outer response shape remains consistent. Target-specific details are placed inside `payload`.
 

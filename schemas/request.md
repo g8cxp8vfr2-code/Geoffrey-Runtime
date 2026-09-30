@@ -61,7 +61,7 @@ Requests may come from buttons, voice input, schedules, messages, calendar event
 
 ## Example: Radio Request
 
-This is a governed Radio request. Free Radio uses the post-execution receipt/status profile in [`radio-v1.md`](radio-v1.md).
+This is an example submitted to the Jackson-West governed interface, not the post-action report produced by customer-originated Radio. Jackson-West independently authenticates/authorizes that request. Server dispatch requires Radio to have been initialized through at least one local run. Free Radio executes locally first and, when enabled/configured, reports afterward through the unchanged [`radio-v1.md`](radio-v1.md) profile; the report must not dispatch Radio again.
 
 ```json
 {
@@ -106,7 +106,7 @@ This is a governed Radio request. Free Radio uses the post-execution receipt/sta
 
 ## Validation Rules
 
-A request must fail validation when:
+At the Jackson-West governed interface, a request must fail validation when:
 
 - A required field is missing
 - The target/action combination is not approved
@@ -117,4 +117,4 @@ A request must fail validation when:
 
 AI may interpret a request, but AI-generated output must still pass the same validation process before execution.
 
-Private authentication fields are intentionally omitted from these generic examples. Customer-side access configuration does not itself grant server authorization; Jackson-West independently authenticates and authorizes every message sent to its governed interface.
+Private authentication fields are intentionally omitted from these generic examples. Customer-side access configuration defaults false/off and does not grant server authorization; Jackson-West independently authenticates and authorizes every message sent to its governed interface. The local Radio Shortcut and registry are intentionally editable, not server security boundaries. These server validation rules do not require a tamper-resistant local Radio allowlist. See the [frozen Radio V1 architecture](../docs/radio-v1.md).

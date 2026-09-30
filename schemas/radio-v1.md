@@ -1,6 +1,12 @@
 # Radio V1 Schema
 
-This document defines the public Radio V1 message profile. It describes messages sent toward Jackson-West without publishing private credentials or Shortcut internals.
+**Status: frozen Radio V1 contract.** This update aligns explanatory documentation only; action names, field tables, required/allowed parameters, status values, and JSON examples are unchanged.
+
+This document defines the public Radio V1 message profile. It describes messages sent toward Jackson-West without publishing private credentials or Shortcut internals. The authoritative architecture is [`../docs/radio-v1.md`](../docs/radio-v1.md).
+
+Radio executes locally. Global Lock / Jackson-West access defaults false/off. Enabling the optional service preserves local action first, followed by a receipt/state report rather than a second execution. The customer-owned Shortcut and registry are editable, not security boundaries; Jackson-West independently authenticates/authorizes governed requests and validates reports at its server boundary.
+
+Distributable Jackson-West Core and Text Jackson-West customer values are intentionally blank until optional onboarding. The interactive first local run bootstraps the required `radio.json` setup from the public registry. Server-originated/structured execution before this initialization is unsupported in V1.
 
 ## Actions
 
@@ -87,7 +93,7 @@ If reporting is not configured, local execution does not imply that Jackson-West
 
 ## Governed request profile
 
-A Jackson-West-originated or otherwise governed Radio request has `status: received` and enters the existing authentication, authorization, governance, routing, execution, and receipt path.
+A request submitted to the Jackson-West governed interface has `status: received` and enters the existing server authentication, authorization, governance, routing, execution, and receipt path. This is not the post-action message from customer-originated Radio. Approved server dispatch invokes the initialized customer-device Radio executor; execution before local initialization is unsupported. Its subsequent receipt/state report must never trigger another Radio execution.
 
 ```json
 {

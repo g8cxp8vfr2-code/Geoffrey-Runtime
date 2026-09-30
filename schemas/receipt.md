@@ -60,4 +60,4 @@ A receipt indicates whether the runtime rejected, blocked, failed, or completed 
 
 Every governed receipt corresponds to one request. A locally originated Radio execution receipt instead correlates to the local action by `request_id` and must never be interpreted as a new governed request.
 
-A governed request may also generate a response and one or more log entries.
+A governed request may also generate a response and one or more log entries. Radio V1 remains local-first with access defaulting false/off. When Jackson-West is enabled, the post-action receipt/state report is validated at the server boundary and must not cause another execution. Server-originated Radio requires prior local initialization; see the [frozen architecture](../docs/radio-v1.md).

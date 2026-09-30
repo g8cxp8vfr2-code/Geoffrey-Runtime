@@ -40,6 +40,10 @@ Expected fields include:
 - `target` is missing or does not name an installed Shortcut.
 - Notification, target execution, or response transport fails.
 
+## Radio V1 execution prerequisite
+
+When the dispatched target is Radio, the customer must already have run Radio locally at least once to create its required `radio.json` registry/setup. Server-originated/structured Radio execution before initialization is unsupported in V1. Jackson-West independently authenticates/authorizes server requests; this local dispatcher and editable registry do not grant server authorization. Radio executes locally and any subsequent receipt/state report must not dispatch another Radio action. See the [frozen architecture](../docs/radio-v1.md). This note documents the prerequisite; it adds no runtime behavior.
+
 ## Related shortcuts
 
 - `Geoffrey Request Information`

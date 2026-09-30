@@ -20,7 +20,7 @@ The goal is simple:
 - AI only when needed
 - Every governed request is logged
 - Reported local actions retain receipt/status evidence
-- Every action is validated
+- Every governed action is validated at the Jackson-West boundary; local Radio remains customer-editable
 - Every execution returns a result
 - Architecture over shortcuts
 - Modular components
@@ -67,7 +67,21 @@ The goal is simple:
 - State management
 - Runtime locks
 
-The Radio V1 execution boundary and public contract are documented in [`docs/radio-v1.md`](docs/radio-v1.md) and [`schemas/radio-v1.md`](schemas/radio-v1.md).
+### Radio V1 — architecture frozen
+
+Radio V1 completed its architecture/readiness review. Its official architecture is **local-first**, with Global Lock / Jackson-West access defaulting to **false/off**. Free Radio executes locally without Jackson-West governance. Actions are **Play, Stop, Back, and Next**; volume, pause, and resume are outside V1.
+
+Play selects a station and one or more outputs and invokes the appropriate local helper Shortcuts. The complete product relationship is **Geoffrey Runtime Radio → Radio controller → Radio Stations → Speakers/outputs → Global Lock → optional Jackson-West service**. Stations and Speakers are required installation components with separate packaging/publishing; unpublished helper downloads are not frozen-engine defects.
+
+The customer-owned Shortcut and `radio.json` registry are intentionally editable, not security boundaries. Jackson-West independently authenticates/authorizes governed requests and is the authoritative security boundary. Local edits or access flags cannot grant server authorization. With Jackson-West enabled, Radio still acts locally first; the later receipt/state report never requests a second execution. Distributable Jackson-West Core and Text Jackson-West customer values are intentionally blank until optional customer onboarding.
+
+Run Radio locally at least once to create its required registry/setup. The public registry bootstraps the interactive path. Server-originated/structured execution before initialization is unsupported in V1. Native media actions labeled Mac during development execute on the customer device and remain subject to device verification.
+
+Install through the permanent [Radio](https://geoffreyruntime.com/radio/install), [Stations](https://geoffreyruntime.com/radio/install/stations), [Speakers](https://geoffreyruntime.com/radio/install/speakers), and [Global Lock](https://geoffreyruntime.com/global-lock/install) pages. Apple download links are replaceable implementation details. The Radio/controller, station, and speaker links still await publication; Global Lock has its existing separate release.
+
+Remaining work is deployment: iPhone/device verification, Stations/Speakers packaging and publishing, website download/content completion, and final customer-install tests. This is not V2 architecture work.
+
+The authoritative frozen architecture and unchanged public contract are documented in [`docs/radio-v1.md`](docs/radio-v1.md) and [`schemas/radio-v1.md`](schemas/radio-v1.md). See [`recent.md`](recent.md) and [`log.md`](log.md) for documentation/deployment status.
 
 ## AI Orchestration
 
@@ -81,7 +95,7 @@ AI never directly controls devices.
 
 # Architecture
 
-The flow below is the governed path. Free Radio is a separate local-first lane: the customer device executes the action, then sends a receipt or status update where configured. A local receipt is not a new governed request.
+The flow below describes the server-governed request path. Free Radio is local-first and does not pass through Jackson-West governance before local execution. Access defaults off. When enabled and configured, the customer device executes the action, then sends a receipt/state report. Jackson-West validates that report without dispatching Radio again. Server-originated Radio uses the initialized local executor after independent server authentication/authorization; pre-initialization structured execution is unsupported in V1.
 
 ```
 Voice

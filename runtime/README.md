@@ -62,7 +62,11 @@ Apple Home • Tesla • Radio • Scenes
 
 ## Radio V1 boundary
 
-Free Radio does not enter the governed flow above before execution. It executes locally and may report the completed action afterward. Jackson-West-originated or otherwise governed Radio requests continue to use the governed flow. See [`../docs/radio-v1.md`](../docs/radio-v1.md).
+**Radio V1 architecture is frozen.** Free Radio executes locally without Jackson-West governance; Global Lock / Jackson-West access defaults false/off. When enabled, the local action still happens first and its subsequent receipt/state report must not dispatch Radio again. Jackson-West independently authenticates/authorizes governed requests at the server boundary. Server-originated execution invokes the initialized customer-device Radio executor; structured execution before the first local run is unsupported.
+
+The interactive path bootstraps `radio.json` from the public registry. The customer-owned Shortcut/registry remain intentionally editable and cannot grant server authorization. Distributable Jackson-West Core and Text Jackson-West customer values stay blank until optional onboarding. Mac media-action labels are development artifacts, not the final execution device.
+
+Radio supports Play, Stop, Back, and Next, with no V1 volume, pause, or resume. Play invokes local station and output helpers. Stations and Speakers are required separate installation components with their own packaging/publishing. Global Lock controls local access; Jackson-West is an optional service. Unpublished helper links are deployment work, not Radio-engine defects. See [`../docs/radio-v1.md`](../docs/radio-v1.md) for the official architecture.
 
 ---
 
@@ -127,12 +131,7 @@ A local Radio receipt is evidence of a device-reported local action. It is not a
 
 **Version:** 1.0
 
-Current focus:
-
-- Runtime stabilization
-- Documentation
-- Schema versioning
-- Additional runtime services
+Radio V1 architecture/readiness review is complete and frozen. Its remaining work is iPhone/device verification, Stations/Speakers packaging and publishing, completing website installation links/content, and final customer-install testing. This does not assert that every runtime service is frozen. See [`../recent.md`](../recent.md).
 
 ---
 

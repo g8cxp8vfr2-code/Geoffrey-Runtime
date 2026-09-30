@@ -2,6 +2,10 @@
 
 Installer menu for the Shortcut components presented as Geoffrey Runtime setup steps.
 
+## Public Radio installation
+
+This recorded installer menu is distinct from the [frozen Radio V1 product installation](../docs/radio-v1.md). Public Radio setup provides the controller, required individual Radio Stations, required Speakers/output helpers, and Global Lock; Jackson-West remains an optional service with separate onboarding. Use the permanent [Radio](https://geoffreyruntime.com/radio/install), [Stations](https://geoffreyruntime.com/radio/install/stations), and [Speakers](https://geoffreyruntime.com/radio/install/speakers) pages rather than publishing private menu URLs. Apple release links remain replaceable website details. Unpublished helper downloads are packaging/publishing work, not Radio-engine defects.
+
 ## Input
 
 No explicit input is required.
