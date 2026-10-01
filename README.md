@@ -77,9 +77,9 @@ The customer-owned Shortcut and `radio.json` registry are intentionally editable
 
 Run Radio locally at least once to create its required registry/setup. The public registry bootstraps the interactive path. Server-originated/structured execution before initialization is unsupported in V1. Native media actions labeled Mac during development execute on the customer device and remain subject to device verification.
 
-Install through the permanent [Radio](https://geoffreyruntime.com/radio/install), [Stations](https://geoffreyruntime.com/radio/install/stations), [Speakers](https://geoffreyruntime.com/radio/install/speakers), and [Global Lock](https://geoffreyruntime.com/global-lock/install) pages. Apple download links are replaceable implementation details. The Radio/controller, station, and speaker links still await publication; Global Lock has its existing separate release.
+Install through the permanent [Radio](https://geoffreyruntime.com/radio/install), [Stations](https://geoffreyruntime.com/radio/install/stations), [Speakers](https://geoffreyruntime.com/radio/install/speakers), and [Global Lock](https://geoffreyruntime.com/global-lock/install) pages. Those pages present the applicable terms and record required customer acceptance before continuing to published Apple Shortcuts. Apple download links remain replaceable implementation details. Global Lock, the Station Button, and the Speaker Button are published; the main Radio/controller download remains pending.
 
-Remaining work is deployment: iPhone/device verification, Stations/Speakers packaging and publishing, website download/content completion, and final customer-install tests. This is not V2 architecture work.
+Remaining V1 deployment work is the main Radio/controller publication and its final customer-install verification. This is not V2 architecture work.
 
 The authoritative frozen architecture and unchanged public contract are documented in [`docs/radio-v1.md`](docs/radio-v1.md) and [`schemas/radio-v1.md`](schemas/radio-v1.md). See [`recent.md`](recent.md) and [`log.md`](log.md) for documentation/deployment status.
 
@@ -154,6 +154,20 @@ runtime/
 schemas/
 shortcuts/
 ```
+
+---
+
+# Licensing
+
+Copyright © 2026 Geoffrey Runtime LLC. Geoffrey Runtime LLC owns the customer-distributed Geoffrey Runtime software in this repository.
+
+Materials expressly covered by [LICENSE](LICENSE) are available under the **Geoffrey Runtime Source-Available License V1**. It permits inspection, personal installation and use, modification, study, and qualifying noncommercial sharing. It does not permit commercial redistribution, charging for access, paid bundling, commercial sublicensing, competing commercial offerings, or misleading use of Geoffrey Runtime or Jackson-West branding without written authorization. This is a source-available license, not an open-source license.
+
+The [Customer Usage Agreement](https://geoffreyruntime.com/legal/usage) separately governs the Geoffrey Runtime website, official installation experience, and connected features. The software license controls copyright permissions for covered software; the Usage Agreement does not replace those permissions.
+
+Private Jackson-West technology, systems, services, and credentials are outside this repository and are not licensed by the Source-Available License. Third-party and file-specific notices continue to control their respective materials.
+
+For commercial authorization, contact [jack@jackson-west.io](mailto:jack@jackson-west.io).
 
 ---
 
