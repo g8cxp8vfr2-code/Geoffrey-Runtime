@@ -1,1 +1,199 @@
-To be determined.
+Version: gr-source-available-2026-09-30-v1
+
+Geoffrey Runtime Source-Available License V1
+This source-available license permits inspection, installation, internal use, modification and 
+noncommercial sharing while reserving commercial rights, trademarks and all access to Jackson-West services. It is not an open-source license.
+Copyright (c) 2026 Geoffrey Runtime LLC. All rights reserved.
+This License applies to a release only when Geoffrey Runtime LLC expressly applies it to that 
+release. The Effective Date for a licensed copy is the date on which the copy is first distributed with 
+this License or an express notice applying it.
+1 Definitions
+Licensor means Geoffrey Runtime LLC, a Minnesota limited liability company.
+Software means Geoffrey Runtime source code, Apple Shortcuts, scripts, configuration files, 
+documentation, examples, release materials and other software materials distributed with or 
+expressly made subject to this License. Software excludes Third-Party Components and Jackson-West Systems.
+Modified Version means a work that adapts, alters, translates, arranges, revises, extends or is 
+otherwise derived from the Software.
+You means the individual or legal entity exercising rights under this License.
+Internal Business Use means use within Your own organization to support internal operations, 
+provided the Software is not sold, distributed to customers, offered as a hosted or managed service, 
+included in a paid product or service, or otherwise directly monetized.
+Noncommercial Distribution means distribution that is not intended for commercial advantage or 
+monetary compensation and for which no fee, donation, subscription, advertising engagement, 
+purchase, barter, service engagement or other consideration is required or expected.
+Competitive Offering means a product or service offered to third parties for commercial advantage 
+or consideration where the product or service incorporates a substantial portion of the Software or 
+a Modified Version, or where its core functionality is substantially derived from and serves as a 
+commercial substitute for Geoffrey Runtime.
+Jackson-West Systems means nonpublic technology, infrastructure, systems, services, and credentials owned or controlled by Jackson-West LLC.
+Marks means the Geoffrey Runtime and Jackson-West names, logos, shields, artwork, trade dress, 
+slogans, domain names, account names and other source-identifying branding.
+Third-Party Components means software, content, services, platforms or other materials owned by 
+a person or entity other than Licensor.
+2 Acceptance and Scope
+By exercising a permission granted by this License, You accept its terms. If You do not accept these 
+terms, You may not copy, modify or distribute the Software except to the extent independently 
+permitted by law.
+This License applies only to materials that include this License or a notice expressly identifying it. 
+Placement in a Geoffrey Runtime repository does not override a different file-specific license or 
+third-party notice.
+3 Ownership and Reserved Rights
+As between You and Licensor, Licensor retains all right, title and interest it owns in the Software. 
+Making source code available does not place the Software in the public domain or waive any rights.
+All rights not expressly granted are reserved.
+You acquire no ownership in the preexisting Software. You retain only the rights You may have in 
+Your original additions to a Modified Version. No contribution transfers to Licensor without a 
+separate written assignment or contribution agreement.
+4 License Grant
+Subject to full compliance with this License, Licensor grants You a limited, worldwide, royalty-free, 
+nonexclusive and nontransferable license to:
+1. view, inspect and study the Software;
+2. install and run the Software for personal, household, educational, research, evaluation, 
+nonprofit and Internal Business Use;
+3. make copies for those permitted purposes;
+4. create Modified Versions for those permitted purposes; and
+5. distribute original or Modified Versions solely through Noncommercial Distribution and in 
+compliance with Section 5.
+This License does not grant a right to sublicense Licensor's rights. A compliant recipient receives 
+rights directly from Licensor. No patent, trademark, Third-Party Component or Jackson-West 
+Systems right is granted.
+5 Conditions on Noncommercial Distribution
+You may distribute the Software or a Modified Version only if every condition below is satisfied.
+1. The distribution is Noncommercial Distribution and no access fee or other consideration is 
+required.
+2. You provide a complete copy of this License with the materials.
+3. You preserve all copyright, attribution, licensing and proprietary notices.
+4. You prominently identify a Modified Version as modified and unofficial and state the change 
+date, general nature of changes and responsible person or organization.
+5. You do not imply approval, sponsorship, endorsement, certification or affiliation by Licensor, 
+Geoffrey Runtime, Jackson-West LLC or Jackson-West.
+6. If You distribute a form that is not reasonably editable or inspectable, You also provide the 
+corresponding editable source or configuration materials at no charge through the same 
+medium or an accessible no-charge location.
+7. You license Your copyrightable contributions in the distributed Modified Version to each 
+recipient under this License without additional restrictions.
+8. You do not use technological measures or additional terms to prevent recipients from exercising
+the rights granted by this License.
+Distribution through a platform that ordinarily displays advertising does not by itself violate this 
+section if You receive no compensation connected to the distribution and access is not conditioned 
+on advertising engagement, subscription, purchase, donation or other consideration.
+6 Commercial and Competitive Restrictions
+Without Licensor's prior written authorization, You may not:
+1. sell, rent, lease, license for a fee or otherwise commercially distribute the Software or a Modified
+Version;
+2. charge any person for access to the Software or a Modified Version;
+3. require a donation, subscription, purchase, paid membership, advertising engagement or other 
+consideration as a condition of access;
+4. include or bundle the Software or a Modified Version in a paid product, paid service, 
+subscription, device package, commercial download, consulting engagement, implementation 
+service, support service, managed service or hosted service;
+5. commercially sublicense the Software;
+6. offer, operate or enable a Competitive Offering;
+7. use the Software or a Modified Version to provide substantially equivalent Geoffrey Runtime 
+functionality to third parties for commercial advantage;
+8. market a modified copy as an official Geoffrey Runtime release; or
+9. authorize another person to do any of the foregoing.
+Internal Business Use is permitted, including use by Your employees and contractors solely on Your
+behalf, provided the Software is not provided to customers, monetized or used as part of a 
+Competitive Offering. These restrictions do not prohibit independent development that does not 
+copy, incorporate, adapt or derive from protected expression in the Software. Nothing restricts 
+rights that law does not permit Licensor to restrict.
+7 Separate Commercial Licenses
+Licensor may offer separate commercial licenses, permissions, support arrangements or other 
+terms. Any use outside this License requires a separate written agreement signed by Licensor. 
+Different terms granted to another person do not modify this License or require Licensor to offer 
+the same terms to You.
+8 Trademarks and Branding
+No trademark, service-mark, trade-name, logo, trade-dress, publicity, endorsement or branding 
+rights are granted. You may reproduce notices and Marks embedded in an unmodified copy only as
+reasonably necessary for permitted use or Noncommercial Distribution.
+A Modified Version may truthfully state that it is based on Geoffrey Runtime solely for attribution, 
+but it must be prominently identified as modified and unofficial. Without written authorization, 
+You may not use a Mark as the name, logo, icon, account name, domain name or principal branding
+of a modified version, product, service, organization or repository; use a Mark in advertising; alter 
+or imitate logos, shields or trade dress; or imply sponsorship, endorsement, authorization, 
+certification or affiliation. Truthful nominative use permitted by law is not prohibited.
+9 Jackson-West Service Boundary
+The Software and Jackson-West Systems are separate assets owned by separate companies. 
+Possession, installation, copying, modification or distribution of the Software provides no automatic right to Jackson-West Systems, private technology, services, or credentials.
+Access requires separate authorization from Jackson-West LLC and may be governed by separate 
+terms, charges and access controls. You may not obtain, share, guess, extract, bypass, defeat or 
+misuse credentials or access controls. Software interoperability creates no continuing access right. 
+Neither Licensor nor Jackson-West LLC must provide, maintain, continue or restore a Jackson-West 
+service under this License.
+10 Third-Party Components and Platforms
+Third-Party Components are governed by their own terms. This License grants only rights Licensor 
+may lawfully grant. A conflicting third-party notice controls solely for its component. Apple, GitHub
+and other third-party providers are not parties to this License, and no affiliation or endorsement is 
+implied.
+11 No Support or Maintenance
+Licensor has no obligation under this License to provide installation help, support, maintenance, 
+updates, corrections, compatibility, hosting, security monitoring, documentation updates or 
+continued availability. Separately provided support or services are governed by their own terms.
+12 Disclaimer of Warranties
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED AS IS AND AS 
+AVAILABLE, WITH ALL FAULTS AND WITHOUT WARRANTIES OF ANY KIND. LICENSOR 
+DISCLAIMS EXPRESS, IMPLIED AND STATUTORY WARRANTIES, INCLUDING TITLE, NON-INFRINGEMENT, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, 
+SECURITY, RELIABILITY, AVAILABILITY, COMPATIBILITY AND QUIET ENJOYMENT. LICENSOR 
+DOES NOT WARRANT ERROR-FREE, SECURE OR UNINTERRUPTED OPERATION OR FITNESS FOR 
+SAFETY-CRITICAL, EMERGENCY, MEDICAL, SECURITY, VEHICLE-CONTROL OR LIFE-SUPPORT USE. 
+YOU ARE RESPONSIBLE FOR TESTING, BACKUPS, CREDENTIAL SECURITY AND APPROPRIATENESS. 
+EXCLUSIONS APPLY ONLY TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+13 Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR AND ITS MEMBERS, MANAGERS, 
+AFFILIATES, CONTRIBUTORS, CONTRACTORS AND LICENSORS WILL NOT BE LIABLE FOR 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES, OR FOR
+LOSS OF DATA, PRIVACY, REVENUE, PROFITS, GOODWILL, BUSINESS OPPORTUNITY, DEVICE 
+ACCESS, SERVICE ACCESS OR SYSTEM AVAILABILITY, ARISING FROM THE SOFTWARE OR THIS 
+LICENSE, UNDER ANY THEORY AND EVEN IF ADVISED OF THE POSSIBILITY. LICENSOR'S TOTAL 
+AGGREGATE LIABILITY WILL NOT EXCEED THE GREATER OF THE AMOUNT YOU PAID DIRECTLY 
+TO LICENSOR FOR THE SOFTWARE UNDER THIS LICENSE DURING THE PRECEDING 12 MONTHS 
+OR FIFTY U.S. DOLLARS ($50.00). LIMITATIONS DO NOT APPLY WHERE LAW PROHIBITS THEM.
+14 Termination and Cure
+Your rights automatically suspend upon material breach. If the breach is curable, is Your first 
+material breach and is not intentional commercial exploitation, impersonation, fraud, deliberate 
+circumvention of access controls or credential misuse, Your rights automatically reinstate if You 
+fully cure within 30 days after written notice from Licensor. If You do not timely cure, Your rights 
+automatically terminate at the end of that cure period. An ineligible breach causes termination 
+upon Licensor's written notice. Other reinstatement requires Licensor's signed writing.
+A notice under this section may be sent by email to an address You supplied to Licensor or publicly 
+designate for legal or account notices, through a relevant account or repository notice reasonably 
+calculated to reach You, or by another method permitted by law. Notice is effective when 
+transmitted unless applicable law requires otherwise. If Licensor has no reasonably available 
+address, suspension continues, but a curable breach does not terminate under this section until 
+written notice is sent.
+After termination, cease all use, modification and distribution requiring permission and remove 
+publicly distributed copies under Your control where reasonably practicable. You may keep one 
+archival copy if law requires it. Recipients who obtained copies while You complied retain their 
+rights while they remain compliant. Ownership, trademark, service-boundary, disclaimer, liability, 
+governing-law and naturally surviving provisions survive.
+15 Compliance With Law
+You must comply with applicable laws, including export-control and sanctions rules. This License 
+does not authorize unlawful access, surveillance, interception, circumvention, infringement or 
+interference with another person's devices, accounts, data or services.
+16 Governing Law and Venue
+Minnesota law governs without regard to conflict-of-law principles. An action arising from this 
+License must be brought in the state courts located in Hennepin County, Minnesota or the United 
+States District Court for the District of Minnesota, and each party consents to jurisdiction and 
+venue. The United Nations Convention on Contracts for the International Sale of Goods does not 
+apply. Mandatory consumer rights and jurisdictional protections remain unaffected.
+17 Miscellaneous
+If a provision is unenforceable, it will be enforced to the maximum lawful extent and the 
+remainder will remain effective. Failure to enforce is not a waiver. This License creates no 
+partnership, joint venture, agency, franchise, employment, fiduciary, sponsorship, endorsement or 
+new affiliate relationship. It does not alter the existing parent-subsidiary relationship between 
+Jackson-West LLC and Geoffrey Runtime LLC.
+You may not assign this License without Licensor's written consent. Licensor may assign it with the 
+Software to an affiliate, successor or acquirer only with applicable corporate approvals and subject 
+to operative ownership records. This clause does not itself transfer the Software or any Jackson-West System. This License is the complete agreement concerning the permissions it grants but does 
+not supersede a separately signed commercial, service, confidentiality or contributor agreement.
+Licensor may publish new versions. A new version does not retroactively replace this version for a 
+copy already received unless You accept the new version or the release expressly permits a later 
+version. Headings do not affect interpretation.
+
+Use of a website, account, installation experience, connected feature, or service may be subject to separate accepted terms. If those terms conflict with this License concerning copyright permissions to install, run, copy, modify, or distribute the Software, this License controls. Suspension or termination of a service does not by itself terminate rights in a Software copy that remain valid under this License.
+
+Contact: Geoffrey Runtime LLC; jack@jackson-west.io
+7809 Southtown Center
+PMB 210
+Bloomington, MN 55431
