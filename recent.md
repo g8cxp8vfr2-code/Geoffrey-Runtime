@@ -1,4 +1,18 @@
-# Current status — September 30, 2026
+# Current status — October 5, 2026
+
+## Radio V2 in preparation
+
+Radio V2 is being prepared and verified. The main Radio installer is temporarily unavailable, and no earlier installer is offered on the [official Radio page](https://geoffreyruntime.com/radio/install).
+
+Radio remains free and local-first. No Jackson-West account is required. The published setup path uses Global Lock and does not require Global Key. Station and Speaker Button catalogs remain available for $0; consult their permanent pages for current setup and terms.
+
+Geoffrey Runtime downloads do not automatically grant access to Jackson-West's separate private services.
+
+The [Black Line Express browser preview](https://geoffreyruntime.com/black-line-express/demo/) is a separate concept with simulated vehicle controls and an external WVLG player link. It is not a Radio V2 release or an active vehicle connection.
+
+## Archived status — September 30, 2026
+
+The dated record below describes the frozen V1 architecture and deployment work at that time. Its installation/publication table is historical; use the official Radio page for current availability.
 
 ## Geoffrey Runtime Radio V1
 
@@ -24,3 +38,4 @@ Radio controller → required Radio Stations → required Speakers/outputs → G
 | Final customer-install tests | Verify complete install, first local run, and initialized structured/server execution |
 
 Permanent pages: [Radio](https://geoffreyruntime.com/radio/install), [Stations](https://geoffreyruntime.com/radio/install/stations), [Speakers](https://geoffreyruntime.com/radio/install/speakers), [Global Lock](https://geoffreyruntime.com/global-lock/install). Page publication alone does not establish completed Apple downloads or customer-install verification. No V2 behavior or local tamper-resistance work is required by the freeze.
+
