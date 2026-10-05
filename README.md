@@ -1,16 +1,32 @@
 # Geoffrey Runtime
 
-> A governed personal automation runtime for Apple Shortcuts and AI orchestration.
+> Local-first Apple Shortcuts, personal automation, and optional AI orchestration.
+
+This is the official public documentation repository for Geoffrey Runtime. It describes the customer-facing software, documented architecture, and request/receipt contracts. Geoffrey Runtime brings a digital identity, personality, policies, and useful capabilities together.
+
+## Start here
+
+- [Explore Geoffrey Runtime](https://geoffreyruntime.com/)
+- [Browse the Shortcut library](https://geoffreyruntime.com/shortcuts)
+- [Check Radio V2 availability](https://geoffreyruntime.com/radio/install)
+- [Preview Black Line Express](https://geoffreyruntime.com/black-line-express/demo/): a browser concept with simulated vehicle controls and an external WVLG player link. No vehicle connection is active.
+- [Read the architecture documentation](docs/README.md)
+
+## Current Radio status
+
+Radio V2 is being prepared and verified. The main Radio installer is temporarily unavailable; the official Radio page does not offer an earlier installer. Radio remains free and local-first, with no Jackson-West account required. Its published setup path uses Global Lock and does not require Global Key. See the [Radio status page](https://geoffreyruntime.com/radio/install) for availability and setup.
+
+The V1 architecture documents below are retained as a frozen reference. They do not establish current installer availability or a V2 release.
+
+## Software and service boundary
+
+Geoffrey Runtime is the customer-facing software. Some capabilities run entirely on the customer device. Optional Jackson-West services have their own independently enforced authorization boundary; downloading or editing a Shortcut does not grant access.
+
+This repository's covered materials use the Geoffrey Runtime Source-Available License V1. See [Licensing](#licensing) for the existing terms. Private Jackson-West technology, systems, services, and credentials remain outside this repository.
 
 ## Overview
 
-Geoffrey Runtime is a deterministic automation platform built on Apple Shortcuts. It combines rule-based execution with optional AI assistance to create a reliable, auditable, and extensible personal automation system.
-
-Unlike traditional smart home automations that connect devices directly together, Geoffrey Runtime provides a governed path where requests can be validated, logged, approved, executed, and audited. Some explicitly local capabilities, including Free Radio, execute on the customer device first and may then report a receipt or status event to Jackson-West.
-
-The goal is simple:
-
-**Every governed request has a beginning, a decision, an execution, and a receipt. Local execution is reported as local execution, not recast as governance.**
+Geoffrey Runtime combines deterministic execution with optional AI assistance. Governed requests can be validated, logged, approved, executed, and audited. Explicitly local capabilities retain their local execution boundary and may report a receipt or status event afterward.
 
 ---
 
@@ -28,7 +44,7 @@ The goal is simple:
 
 ---
 
-# Current Features
+# Documented architecture and capabilities
 
 ## Request Intake
 
@@ -67,7 +83,7 @@ The goal is simple:
 - State management
 - Runtime locks
 
-### Radio V1 — architecture frozen
+### Radio V1 — frozen architecture reference
 
 Radio V1 completed its architecture/readiness review. Its official architecture is **local-first**, with Global Lock / Jackson-West access defaulting to **false/off**. Free Radio executes locally without Jackson-West governance. Actions are **Play, Stop, Back, and Next**; volume, pause, and resume are outside V1.
 
@@ -77,11 +93,9 @@ The customer-owned Shortcut and `radio.json` registry are intentionally editable
 
 Run Radio locally at least once to create its required registry/setup. The public registry bootstraps the interactive path. Server-originated/structured execution before initialization is unsupported in V1. Native media actions labeled Mac during development execute on the customer device and remain subject to device verification.
 
-Install through the permanent [Radio](https://geoffreyruntime.com/radio/install), [Stations](https://geoffreyruntime.com/radio/install/stations), [Speakers](https://geoffreyruntime.com/radio/install/speakers), and [Global Lock](https://geoffreyruntime.com/global-lock/install) pages. Those pages present the applicable terms and record required customer acceptance before continuing to published Apple Shortcuts. Apple download links remain replaceable implementation details. Global Lock, Global Key, Radio, the Station Button, and the Speaker Button are published through the website's existing agreement/acceptance flow. Complete Global Lock setup, then Global Key/access setup as required, then install Radio and the optional Station Button / Speaker Button components.
+Current installation availability and setup requirements are published on the permanent [Radio](https://geoffreyruntime.com/radio/install), [Stations](https://geoffreyruntime.com/radio/install/stations), [Speakers](https://geoffreyruntime.com/radio/install/speakers), and [Global Lock](https://geoffreyruntime.com/global-lock/install) pages. Available downloads follow the website's agreement/acceptance flow. The main Radio installer is temporarily unavailable while V2 is prepared and verified.
 
-The main Radio/controller public distribution path is live. The existing release-candidate audit must still be rerun from a clean customer installation to complete the previously blocked execution tests. Radio V1 is not yet declared fully release-ready.
-
-The authoritative frozen architecture and unchanged public contract are documented in [`docs/radio-v1.md`](docs/radio-v1.md) and [`schemas/radio-v1.md`](schemas/radio-v1.md). See [`recent.md`](recent.md) and [`log.md`](log.md) for documentation/deployment status.
+The frozen V1 architecture and public contract are documented in [`docs/radio-v1.md`](docs/radio-v1.md) and [`schemas/radio-v1.md`](schemas/radio-v1.md). Their release-readiness history does not establish current distribution status.
 
 ## AI Orchestration
 
@@ -171,13 +185,13 @@ For commercial authorization, contact [jack@jackson-west.io](mailto:jack@jackson
 
 ---
 
-# Version
+# Documented baseline
 
-Current Version:
+**Runtime V1 architecture**
 
-**Runtime V1**
+This documentation baseline is separate from the Radio product's current release status. Radio V2 is in preparation, and the main installer is temporarily unavailable.
 
-Current capabilities include:
+Documented capabilities include:
 
 - Request wrapping
 - Structured logging
@@ -212,3 +226,4 @@ Geoffrey Runtime treats automation as software engineering instead of isolated a
 Governed automations are validated, logged, executed, and documented by the runtime. Explicitly local capabilities retain their local execution boundary and may publish post-execution status without claiming that Jackson-West governed the action.
 
 The objective is to make personal automation predictable, maintainable, and extensible over time.
+
