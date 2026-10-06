@@ -4,8 +4,13 @@
 
 This is the official public documentation repository for Geoffrey Runtime. It describes the customer-facing software, documented architecture, and request/receipt contracts. Geoffrey Runtime brings a digital identity, personality, policies, and useful capabilities together.
 
+## Shipped project: Estelle’s Kitchen
+
+[Estelle’s Kitchen](docs/estelles-kitchen/README.md) is a deployed household meal-planning and grocery workflow: a mobile-first recipe experience, scheduled meal updates, and a user-reviewed Apple Shortcuts handoff to a personal Reminders list. Explore the [live Kitchen](https://geoffreyruntime.com/estelles-kitchen/), [architecture](docs/estelles-kitchen/architecture.md), and [engineering case study](docs/estelles-kitchen/engineering-case-study.md).
+
 ## Start here
 
+- [Explore Estelle’s Kitchen: deployed project and engineering case study](docs/estelles-kitchen/README.md)
 - [Explore Geoffrey Runtime](https://geoffreyruntime.com/)
 - [Browse the Shortcut library](https://geoffreyruntime.com/shortcuts)
 - [Check Radio V2 availability](https://geoffreyruntime.com/radio/install)
@@ -226,4 +231,5 @@ Geoffrey Runtime treats automation as software engineering instead of isolated a
 Governed automations are validated, logged, executed, and documented by the runtime. Explicitly local capabilities retain their local execution boundary and may publish post-execution status without claiming that Jackson-West governed the action.
 
 The objective is to make personal automation predictable, maintainable, and extensible over time.
+
 
