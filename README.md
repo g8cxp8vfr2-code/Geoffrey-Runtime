@@ -2,12 +2,11 @@
 
 > A deployed local-first automation project demonstrating systems integration, governed execution, and human-centered reliability.
 
-Geoffrey Runtime is a portfolio and product project by **Sidney Jackson III (Jack)**. It explores how web experiences, Apple Shortcuts, native apps, household devices, and optional AI assistance can be connected without treating probabilistic AI output as trusted execution.
-
-**Primary role targets:** Solutions Engineer · Technical Account Manager · Implementation / Integration Engineer · Developer Advocate
+Geoffrey Runtime is the customer-facing software project by **Sidney Jackson III (Jack)**. It explores how web experiences, Apple Shortcuts, native apps, household devices, and optional AI assistance can be connected without treating probabilistic AI output as trusted execution.
 
 **Live project:** https://geoffreyruntime.com/  
-**Contact:** jack@geoffreyruntime.com
+**Product contact:** jack@geoffreyruntime.com  
+**Architecture / professional portfolio:** https://jackson-west.io/
 
 ---
 
@@ -27,7 +26,7 @@ The project demonstrates:
 - transparent known limitations
 - AI-assisted implementation with human-owned architecture, verification, and release decisions
 
-**Best hiring-manager entry points:**
+**Best engineering entry points:**
 
 - [Project overview](docs/estelles-kitchen/README.md)
 - [Engineering case study](docs/estelles-kitchen/engineering-case-study.md)
@@ -134,11 +133,15 @@ For the strongest example of shipped engineering work, start with:
 
 **[docs/estelles-kitchen/engineering-case-study.md](docs/estelles-kitchen/engineering-case-study.md)**
 
+For a safe public example of the governed execution contract, see:
+
+**[examples/public-execution-trace.md](examples/public-execution-trace.md)** — a synthetic request → validation → policy → execution → receipt trace with fictitious identifiers and no private endpoints, credentials, household identifiers, or internal policy rules.
+
 ---
 
 ## Current project status
 
-Geoffrey Runtime is an actively developed personal-automation platform and portfolio project. Some experiences are deployed today; others are prototypes, architecture references, or works in progress.
+Geoffrey Runtime is an actively developed personal-automation product and architecture. Some experiences are deployed today; others are prototypes, architecture references, or works in progress.
 
 The repository deliberately avoids claiming scale, uptime, compatibility, or enterprise readiness that has not been measured.
 
@@ -180,4 +183,6 @@ This repository contains source-available material as well as public documentati
 
 Private Jackson-West technology, credentials, personal household records, and non-public production implementation remain outside this repository.
 
-For project or employment inquiries: **jack@geoffreyruntime.com**
+For Geoffrey Runtime product inquiries: **jack@geoffreyruntime.com**
+
+For architecture, professional work, and hiring information: **https://jackson-west.io/**
